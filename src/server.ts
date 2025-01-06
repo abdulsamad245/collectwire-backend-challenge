@@ -3,8 +3,8 @@ import swaggerUi from 'swagger-ui-express';
 import YAML from 'yamljs';
 import path from 'path';
 import { matrixRouter } from './routes/matrixRoutes';
-import { errorHandler } from './middleware/errorHandler';
-import { upload } from './middleware/fileUpload';
+import { errorHandler } from './middlewares/errorHandler';
+import { upload } from './middlewares/fileUpload';
 
 const app = express();
 

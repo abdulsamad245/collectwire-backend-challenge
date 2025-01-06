@@ -23,14 +23,15 @@ Main project files and directories:
   - `utils/`
     - `matrixOperations.ts` - Contains the core matrix operation functions
     - `handleMatrixOperations.ts` - Contains the function the controller uses in handling the matrix
-  - `middleware/`
+  - `middlewares/`
     - `errorHandler.ts` - Global error handling middleware
     - `fileUpload.ts` - File upload middleware using multer
+  - `types/`
+    - `matrixOperations.ts` - Defines type for matrix operation
 - `tests/`
   - `matrixOperations.test.ts` - Contains unit tests for matrix operations
 - `swagger.yaml` - API documentation in OpenAPI format
 - `package.json` - Project configuration and dependencies
-- `tsconfig.json` - TypeScript configuration
 
 ## Main Components
 
@@ -50,13 +51,13 @@ Defines endpoints for matrix operations:
 - Sum
 - Multiply
 
-### Controller (matrixController.ts)
+### Controllers (matrixController.ts)
 - Generic matrix operation handler
 - Request validation
 - File processing
 - Error response handling
 
-### Matrix Operations (matrixOperations.ts)
+### Matrix Operations (matrixOperations.ts and handleMatrixOperations.ts)
 Core functionality including:
 - Matrix file reading and validation
 - Matrix inversion
@@ -65,17 +66,20 @@ Core functionality including:
 - Element multiplication
 - Input validation
 
-### Error Handling (errorHandler.ts)
+### Error Handling Middleware (errorHandler.ts)
 Global middleware for:
 - Error logging
 - Response formatting
 - HTTP status code mapping
 
-### File Upload (fileUpload.ts)
+### File Upload Middleware (fileUpload.ts)
 Multer configuration for:
 - CSV file filtering
 - File size limits
 - Upload directory management
+
+### types (matrixOperations.ts)
+For defining matrix operation type
 
 ## API Endpoints
 

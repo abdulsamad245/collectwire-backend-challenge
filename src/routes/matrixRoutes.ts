@@ -1,5 +1,5 @@
 import express from 'express';
-import * as matrixController from '../controller/matrixController';
+import * as matrixController from '../controllers/matrixController';
 
 export const matrixRouter = express.Router();
 
