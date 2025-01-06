@@ -133,7 +133,7 @@ npm run dev
 Using curl to test the API:
 
 ```bash
-curl -X POST "http://localhost:8088/echo" -H "accept: text/plain" -H "Content-Type: multipart/form-data" -F "file=@/path/to/matrix.csv
+curl -X POST "http://localhost:8088/{endpoint name e.g echo}" -H "accept: text/plain" -H "Content-Type: multipart/form-data" -F "file=@/path/to/matrix.csv
 ```
 
 Matrix CSV file format example:
